@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*   Primary */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  /*   Accent */
+  --blue: hsl(248, 32%, 49%);
+
+  /*   Neutral */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body {
+  font-family: 'Poppins';
+  background-color: var(--red);
+  background-image: url("C:\Users\MERCY SIMON\Registration form\bg-intro-desktop.png");
+  height: 100vh;
+  width: 50%;
+  margin: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1440;
+
+}
+
+main {
+  margin: 0 10rem;
+  width: 1440px;
+  height: 100vh;
+  font-size: 16px;
+  align-items: center;
+  padding: 20em;
+  
+
+}
+
+section.Form {
+  display: grid;
+  grid-template-areas:
+    'Form form-ad';
+  align-items: center;
+  margin: 0 10rem;
+  max-width: 1440px;
+  height: 100vh;
+  font-size: 16px;
+  justify-content:center;
+  padding: 4em;
+  margin-top: 20%;
+  border-radius: 5px;
+  
+  
+}
+
+.Form {
+  grid-area: Form;
+  align-items: center;
+  margin-right: 2rem;
+  
+}
+
+.Form h1 {
+  font-size: 42px;
+}
+
+.Form p {
+  font-size: 80%;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  padding-top: 1.3rem;
+}
+
+.form-ad {
+  grid-area: form-ad;
+  text-align: center;
+}
+
+div.Ads {
+  background-color: var(--blue);
+  color: white;
+  font-size: 16px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 6px 0px 0px rgba(37, 37, 37, 0.16);
+  margin-bottom: 2rem;
+}
+
+form {
+  background-color: white;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 0px 0px rgba(37, 36, 36, 0.16);
+  align-items: center;
+}
+
+input[type=text],
+input[type=email],
+button[type=submit],
+input[type=password] {
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type=submit] {
+  background-color: var(--green);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 3px 0px 0px rgba(134, 227, 250, 0.39);
+}
+
+small {
+  font-size: 16px;
+  color: var(--grayish-blue);
+}
+
+small strong {
+  color: var(--red);
+}
+
+@media (max-width:1440px) {
+  Section.Form {
+    margin: 0 2rem;
+  }
+
+  .Form h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:800px) {
+  Section.Form {
+    grid-template-areas:
+      'Form'
+      'form-ad';
+    background-image: url("C:\Users\MERCY SIMON\Registration form\bg-intro-desktop.png");
+    text-align: center;
+    margin: 0 2rem;
+  }
+
+  .Form {
+    padding-top: 6rem;
+    margin: unset;
+  }
+
+  .Form h1 {
+    font-size: 28px;
+  }
+
+  .Form p {
+    padding-bottom: 3rem;
+  }
+
+  form {
+    margin-bottom: 3rem;
+  }
+}
